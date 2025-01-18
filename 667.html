@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>运行别的 HTML</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 1440px;
+            height: 1080px;
+            display: flex; /* 使用 Flex 布局 */
+        }
+        h1 {
+            margin: 0; /* 移除标题的默认外边距 */
+        }
+        #title {
+            flex: 1; /* 标题部分占据可用空间的一部分 */
+            display: flex;
+            justify-content: center; /* 水平居中标题 */
+            align-items: center; /* 垂直居中标题 */
+            background-color: #f0f0f0; /* 给标题部分添加背景颜色 */
+        }
+        #iframe-container {
+            flex: 3; /* iframe 容器占据可用空间的另一部分，这里比例为 3 比 1 */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <h1>这是一个标题</h1>
+    </div>
+    <div id="iframe-container">
+        <iframe src="6666.html"></iframe>
+    </div>
+</body>
+</html>
